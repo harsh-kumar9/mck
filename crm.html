@@ -1,0 +1,130 @@
+<html> 
+<head> <title>CRM Portal</title>
+<script> 
+function GEEKFORGEEKS()                                    
+{ 
+    var date = document.forms["RegForm"]["date"];               
+    var onum = document.forms["RegForm"]["onum"];    
+    var product = document.forms["RegForm"]["product"];   
+   
+    if (date.value == "5/15/2019" && product.value == "DNA Cube Analyser" )                                  
+    {  
+        document.getElementById("demo").innerHTML = "<table border=1 align=center><th><td>Internal Order Number</td><td>000183477_DCA</td></th></table>";
+    } 
+    if (date.value == "5/15/2019" && product.value == "Clonal Amplifier" )                                  
+    {  
+        document.getElementById("demo").innerHTML = "Internal Order Number = 000193958_CA";
+    } 
+    if (date.value == "5/17/2019" && product.value == "Turbo Oncolyser" )                                  
+    {  
+        document.getElementById("demo").innerHTML = "Internal Order Number = 000194273_TO";
+    }    
+    if (date.value == "5/24/2019" && product.value == "Rotor_DNA" )                                  
+    {  
+        document.getElementById("demo").innerHTML = "Internal Order Number = 000194265_RD";
+    } 
+    if (date.value == "5/29/2019" && product.value == "Stat-DX Diagnoser" )                                  
+    {  
+        document.getElementById("demo").innerHTML = "Internal Order Number = 000196507_SDD";
+    } 
+    if (date.value == "6/12/2019" && product.value == "Sys KA Hemanalyzer" )                                  
+    {  
+        document.getElementById("demo").innerHTML = "Internal Order Number = 000198523_SKH";
+    } 
+    if (date.value == "6/17/2019" && product.value == "Turbo Hema X" )                                  
+    {  
+        document.getElementById("demo").innerHTML = "Internal Order Number = 000198856_THX";
+    } 
+    if (date.value == "6/21/2019" && product.value == "Rotor-DNA" )                                  
+    {  
+        document.getElementById("demo").innerHTML = "Internal Order Number = 000199423_RD";
+    } 
+   
+
+   
+    return false; 
+}</script> 
+  
+<style> 
+GEEKFORGEEKS {                                         
+    margin-left: 70px; 
+    font-weight: bold ; 
+    float: left; 
+    clear: left; 
+    width: 100px; 
+    text-align: left; 
+    margin-right: 10px; 
+    font-family:sans-serif,bold, Arial, Helvetica; 
+    font-size:14px; 
+} 
+   
+div {  
+    box-sizing: border-box; 
+    width: 100%; 
+    border: 100px solid black; 
+    float: left; 
+    align-content: center; 
+    align-items: center; 
+} 
+   
+form {                                         
+    margin: 0 auto; 
+    width: 600px; 
+}
+h1 {
+    color :#3b5998;
+}
+body{
+    background-color: #dfe1ee;
+}
+input[type=text] {
+  border: 2px solid #274fa5;
+  border-radius: 4px;
+}
+input[type=submit], input[type=reset] {
+  background-color: #3b5998;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button {
+                    font: bold 11px Arial;
+                    text-decoration: none;
+                    background-color: #EEEEEE;
+                    color: #274fa5;
+                    padding: 8px 24px 8px 24px;
+                    border-top: 3px solid #CCCCCC;
+                    border-right: 3px solid #274fa5;
+                    border-bottom: 3px solid #274fa5;
+                    border-left: 3px solid #CCCCCC;
+                }</style></head> 
+   
+<body> 
+<br><br><br>    
+<h1 style="text-align: center"> CRM Portal Demo </h1>           
+<form name="RegForm" action="" onsubmit="return GEEKFORGEEKS()" method="post">  
+    <table>
+    <tr>      
+    <td><p>Order date:</td></td> <td><input type="text" size=65 name="date"></td> </p></tr>        
+    <tr><td><p> Order number:</td> <td><input type="text" size=65 name="onum"></td>  </p></tr>
+    <tr><td><p>Product:</td> <td><input type="text" size=65 name="product"></td>  </p><br></tr> 
+    </table>
+    <p align=center><input type="submit" value="Submit Request" name="Submit">      
+        <input type="reset" value="Reset" name="Reset">   
+    </p>   
+        
+</form> 
+
+<p id="demo"></p><br><br><br><br>
+
+<center><a href="logistics.html" class="button">Move on to the Logistics Platform</a></center>
+
+<br><br><br>
+<center><img src="mck.png"></center>
+
+</body> 
+</html>
